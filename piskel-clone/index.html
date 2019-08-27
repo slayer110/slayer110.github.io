@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<div class="header">
+  <div>
+    <i class="fas fa-bars"></i>
+    <span>Piskel</span>
+  </div>
+  <div>
+    <span style="margin-right: 20px">Settings</span><i class="buttonSettings fas fa-ellipsis-v"></i>
+  </div>
+</div>
+<div class="mainContent">
+  <div class="menu">
+    <ul class="fistColumn">
+      <li id="pen"><i class="tools fas fa-pen fa-2x"></i></li>
+      <li id="eraser"><i class="tools fas fa-eraser fa-2x"></i></li>
+      <li id="paintBucket"><i class="tools fas fa-fill fa-2x"></i></li>
+      <li id="allPixelsColor"><i class="tools fas fa-tint fa-2x"></i></li>
+    </ul>
+    <ul class="secondColumn">
+      <li id="straightLine"><i class="tools fas fa-external-link-alt fa-2x"></i></li>
+    </ul>
+    <input type="color" id="primaryColor" name="head"
+           value="#e66465">
+    <input type="color" id="secondaryColor" name="head"
+           value="#0000ff">
+  </div>
+  <div class="frames">
+    <div class="frame active" id="0">
+      <div class="number">0</div>
+      <img class="image" src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAC+CAIAAAAEFiLKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHFSURBVHhe7dIxAQAADMOg+bdZI/OQGzRwg0QdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdInWI1CFSh0gdku0Bnhc1njj1szkAAAAASUVORK5CYII='>
+      <div class="buttonDelete"><i class="fas fa-trash-alt fa-2x"></i></div>
+      <!--<div class="buttonCopy"><i class="fas fa-copy fa-2x"></i></div>-->
+    </div>
+    <div id="addFrameButton">Add frame</div>
+  </div>
+  <canvas id="myCanvas" width="32px" height="32px"></canvas>
+  <canvas id="auxiliaryCanvas" width="32px" height="32px"></canvas>
+  <div class="settings">
+    <span>Settings</span>
+    <select id="resize">
+      <option value="32">32X32</option>
+      <option value="64">64X64</option>
+      <option value="128">128X128</option>
+    </select>
+    <img id="preview">
+    <span style="position:absolute;font-size: 18px; margin-left: 25px;margin-top:220px">Preview</span>
+    <div id="download"><i class="fas fa-save fa-2x"></i></div>
+  </div>
+</div>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
