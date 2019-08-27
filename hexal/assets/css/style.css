@@ -1,0 +1,545 @@
+/*connecting fonts*/
+@font-face {
+    font-family: MavenProRegular;
+    src: url("../fonts/MavenPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato-Black;
+    src: url("../fonts/Lato-Black.ttf");
+}
+/*end connecting fonts*/
+
+/*reset the indentation of the document and set the minimum width*/
+* {
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+    min-width: 1023px;
+}
+/*end reset the indentation of the document and set the minimum width*/
+
+/*space distribution*/
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+/*end space distribution*/
+
+
+/*header styles*/
+header {
+    position: relative;
+    width: 100%;
+    height: 63px;
+    background-color: #323232;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #2f917d;
+}
+/*the creation of a Central triangle*/
+.triangle {
+    position: relative;
+    top: 11px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 26px 45px 0 45px;
+    border-color: #323232 transparent transparent transparent;
+    margin: auto;
+}
+
+.white_triangle {
+    position: relative;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52px 29.5px 0 29.5px;
+    border-color: #ffffff transparent transparent transparent;
+    margin: auto;
+}
+
+.white_triangle::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 52px 29.5px 0 29.5px;
+    border-color: #323232 transparent transparent transparent;
+    top: -55px;
+    left: -29.5px;
+}
+
+.white_triangle_in {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 29.5px 0 29.5px;
+    border-color: #ffffff transparent transparent transparent;
+    left: -29.5px;
+    top: -52px;
+}
+
+.white_triangle_in::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 31px 0 31px;
+    border-color: #323232 transparent transparent transparent;
+    left: -31px;
+    top: -12px;
+}
+
+/*creating lines under triangle*/
+.leftLine hr {
+    width: 408px;
+    margin-right: 31px;
+    margin-top: 30px;
+    border: 0;
+    border-bottom: 1px solid #e4e9eb;
+}
+
+.rightLine hr {
+    width: 408px;
+    margin-left: 31px;
+    margin-top: 29px;
+    border: 0;
+    border-bottom: 1px solid #e4e9eb;
+}
+.lines {
+    position: relative;
+    width: 1019px;
+    margin: auto;
+    height: 50px;
+    display: table;
+    top: -17px;
+}
+.leftLine {
+    float: right;
+    margin-top: -27px;
+}
+
+.rightLine {
+    margin-top: -35px;
+}
+
+/*creating labels*/
+li {
+    display: inline-block;
+    font-family: Lato-Bold, "Tahoma", cursive;
+    font-size: 9px;
+    color: white;
+    padding-right: 8px;
+}
+
+.leftLine ul {
+    margin-top: -8px;
+    margin-left: -39px;
+}
+
+.rightLine ul {
+    margin-top: -8px;
+    margin-left: 288px;
+}
+/*end header styles*/
+
+/*main styles*/
+main {
+    text-align: center;
+}
+/*creating a hexagon*/
+.hex {
+    position: relative;
+    width: 180px;
+    height: 104px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 221px;
+    left: 0px;
+    top: 0px;
+    float: left;
+    text-align: center;
+    zoom: 1;
+    margin-left: 20px;
+}
+
+.hex .corner-1,
+.hex .corner-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.hex .corner-1 {
+    z-index: -1;
+    transform: rotate(60deg);
+}
+
+.hex .corner-2 {
+    transform: rotate(-60deg);
+}
+
+.hex .corner-1:before,
+.hex .corner-2:before {
+    width: 218px;
+    height: 218px;
+    content: '';
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+}
+
+.corner-1:before {
+    transform: rotate(-60deg) translate(-109px, -6px);
+    transform-origin: 0 0;
+}
+
+.corner-2:before {
+    transform: rotate(60deg) translate(-59.3px, -13.5px);
+    bottom: 0;
+}
+
+/*creating cells*/
+.row_1 {
+    position: relative;
+    display: inline-block;
+    margin-top: 79px;
+    margin-left: -13px;
+    height: 20%;
+}
+
+.row_2 {
+    position: relative;
+    display: inline-block;
+    margin-top: 59px;
+    margin-left: -16px;
+}
+
+.row_3 {
+    position: relative;
+    display: inline-block;
+    margin-top: 61px;
+    margin-left: -19px;
+}
+
+.ceils {
+    display: inline-block;
+    width: 1002px;
+    margin-top: 63px;
+    margin-bottom: 124px;
+}
+
+.ceils::after {
+    content: "";
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #e4e9eb;
+    height: 10px;
+    width: 96%;
+    top: 113px;
+    margin: 0 auto;
+}
+
+/*illustrator*/
+.illustrator {
+    position: relative;
+    z-index: 0;
+    background-color: #2eb398;
+    height: 341px;
+}
+
+.illustrator_lines {
+    position: relative;
+    display: block;
+    border-width: 0px 1px;
+    border-style: solid;
+    border-color: #219d84;
+    height: 311px;
+    width: 819px;
+    top: 16px;
+    margin: 0 auto;
+
+}
+
+.photo {
+    position: relative;
+    width: 200px;
+    height: 156px;
+    top: 104px;
+}
+
+.inscription {
+    position: relative;
+    display: inline-block;
+    top: -111px;
+    left: -86px;
+    text-align: justify;
+    margin-left: 304px;
+}
+
+.SmAnd {
+    font-family: MavenProRegular, "Times New Roman", sans-serif;
+    font-size: 28px;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 0.8px;
+    font-stretch: ultra-condensed;
+}
+
+.illCha {
+    display: inline-block;
+    position: relative;
+    font-family: MavenProRegular, "Times New Roman", sans-serif;
+    font-size: 17.5px;
+    color: #20816d;
+    font-weight: 100;
+    letter-spacing: 0px;
+    left: 2px;
+}
+
+.contentUnderInscription {
+    position: relative;
+    width: 579px;
+    top: 12px;
+    font-size: 11.5px;
+    font-family: Lato-Regular,"Tw Cen MT", cursive;
+    color: white;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+
+/*working with icons*/
+.icons {
+    position: absolute;
+    top: 235px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 162px;
+    right: 4px;
+    font-size: 12px;
+    z-index: 10;
+
+}
+
+.icons div {
+    width: 24.5px;
+    height: 24px;
+    background-color: #a4dbd5;
+    border: 0px;
+}
+
+.icons div i {
+
+    position: relative;
+    top: 5px;
+}
+
+.icons a {
+    color: #05ab95;
+}
+/*end main*/
+
+/*footer styles*/
+footer {
+    height: 564px;
+    background-color: #323232;
+    text-align: center;
+}
+
+/*form*/
+.get_in_touch {
+    position: relative;
+    width: 966px;
+    height:566px;
+    margin: 0 auto;
+}
+
+.get_in_touch .inscription {
+    position: absolute;
+    color: #bfbfbf;
+    font-family: MavenProRegular, "Times New Roman", sans-serif;
+    left: -209px;
+    top: 61px;
+}
+.get_in_touch::after {
+    content: "";
+    position: relative;
+    z-index: 6;
+    display: block;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #2b2b2b;
+    height: 537px;
+    width: 960px;
+    bottom: 347px;
+    margin: 0 auto;
+}
+form {
+    position: relative;
+    width: 601px;
+    height: 360px;
+    top: 136px;
+    left: 94px;
+    color: white;
+    text-align: left;
+    z-index: 7;
+
+}
+
+form input {
+    height: 35px;
+    width: 578px;
+    background-color: #454545;
+    border: 0px;
+}
+form p{
+    margin-top:-2px;
+}
+
+textarea {
+    width: 575px;
+    height: 147px;
+    background-color: #454545;
+    border: 0px;
+    overflow: hidden;
+}
+
+textarea::placeholder {
+    position: relative;
+    left: 12px;
+    top:13px;
+    color: #bebebe;
+    font-family: Lato-Regular, "Tw Cen MT", sans-serif;
+    font-size: 11.1px;
+}
+
+input::placeholder {
+    position: relative;
+    color: #bebebe;
+    left: 13.5px;
+    top: 1px;
+    font-family: Lato-Regular, "Tw Cen MT", sans-serif;
+    font-size: 11.2px;
+}
+
+input[type="submit"] {
+    position: absolute;
+    right: 22px;
+    width: 90px;
+    margin-right: 0px;
+    top: 328px;
+    height: 37px;
+    background-color: #2eb398;
+    font-family: Lato-Bold, "Tahoma", sans-serif;
+    color: white;
+    font-size: 11px;
+}
+
+/*footer inscriptions*/
+.quisque_hendrerit {
+    position: absolute;
+    width: 179px;
+    right: 93px;
+    top: 130px;
+    font-size: 12px;
+    font-family: Lato-Regular, "Tw Cen MT", sans-serif;
+    text-align: justify;
+    color:  #bfbfbf;
+    line-height: 1.8;
+}
+
+.contacts {
+    position: absolute;
+    width: 179px;
+    right: 93px;
+    top: 292px;
+    font-family: Lato-Bold, "Tahoma", sans-serif;
+    text-align: justify;
+    z-index: 7;
+}
+
+.contacts li a{
+    font-size: 11px;
+    word-spacing: 2px;
+    color:  #bfbfbf;
+    margin-top: 0px;
+}
+.contacts li{
+    margin-top: 6px;
+}
+.contacts li i {
+    margin-right: 14px;
+    color: #2eb398;
+}
+/*bottom line of the page*/
+.copyright {
+    height: 43px;
+    background-color: #222222;
+    text-align: center;
+}
+
+.copyright_center {
+    width: 960px;
+}
+
+.copyright p {
+    position: relative;
+    display: block;
+    font-size: 11.5px;
+    color: #454545;
+    top: 13.5px;
+    left: 78px;
+    font-family: MavenProRegular,"Times New Roman", sans-serif;
+
+}
+.copyright p i {
+    font-size: 10px;
+}
+/*end footer styles*/
