@@ -1,0 +1,644 @@
+/*connecting fonts*/
+@font-face {
+    font-family: Titilium-Web-Bold;
+    src: url("../fonts/titillium-web-bold.ttf");
+}
+
+@font-face {
+    font-family: Titilium-Web-Regular;
+    src: url("../fonts/titillium-web-regular.ttf");
+}
+
+@font-face {
+    font-family: Titilium-Web-Semibold;
+    src: url("../fonts/titillium-web-semibold.ttf");
+}
+
+@font-face {
+    font-family: Malaga-OT-Reg-Italic;
+    src: url("../fonts/malaga-OT-Reg-Italic.otf");
+}
+
+/*end connecting fonts*/
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 1163px;
+}
+
+header {
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+}
+
+.main-content {
+    /* 1 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 1 0 auto;
+}
+
+footer {
+    /* 0 flex-grow, 0 flex-shrink, auto flex-basis */
+    flex: 0 0 auto;
+}
+
+/*styles for header*/
+header {
+    background-image: url("../images/secemailcomm.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+    height: 778px;
+}
+
+.top1 .left ul {
+    position: relative;
+    list-style-type: none;
+    font-family: Titilium-Web-Regular, "Times New Roman", sans-serif;
+    font-size: 14px;
+    margin-top: -16px;
+    margin-right: 26.5%;
+}
+
+.top1 .right ul {
+    display: inline-block;
+    list-style-type: none;
+    font-family: Titilium-Web-Regular, "Times New Roman", sans-serif;
+    font-size: 16px;
+    color: #454545;
+    margin-top: 41px;
+    padding-left: 31px;
+}
+
+.top1 .left li {
+    display: inline-block;
+    width: 63px;
+    padding: 0px;
+}
+
+.top1 .right li {
+    display: inline-block;
+    margin-right: 23px;
+}
+
+.top1 .left {
+    width: 50%;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.top1 .right {
+    width: 50%;
+    text-align: left;
+    padding-top: 35px;
+}
+
+.top1 .left p {
+    padding-right: 31.5%;
+    font-family: Titilium-Web-Bold, "Times New Roman", sans-serif;
+    font-size: 30px;
+    color: #858688;
+}
+
+.top1 .left p {
+    padding-right: 31.5%;
+}
+
+.Mail {
+    color: #5b4295;
+}
+
+.top1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.slash {
+    display: inline-block;
+    position: relative;
+    left: 22%;
+}
+
+.LogInAndSignUp {
+    display: inline-block;
+    font-family: Titilium-Web-Bold, "Times New Roman", sans-serif;
+    font-size: 16px;
+    margin-left: 48px;
+}
+
+.signUp {
+    display: inline-block;
+    position: relative;
+    width: 95px;
+    height: 41px;
+    background: -webkit-linear-gradient(329deg, rgba(88, 44, 126, 1) 0%, rgba(88, 44, 126, 1) 33%, rgba(98, 120, 206, 1) 86%, rgba(98, 120, 206, 1) 100%);
+    border-radius: 32px;
+    left: 20px;
+    top: 17px;
+    color: white;
+    box-shadow: 0 11px 17px 0px #8796c7;
+}
+
+.signUp span {
+    position: absolute;
+    left: 21px;
+    top: 6px;
+}
+
+.logIn {
+    display: inline-block;
+}
+
+/*Secure Email Comm*/
+.top2 {
+    text-align: center;
+    font-family: Titilium-Web-Semibold, "Times New Roman", sans-serif;
+    font-size: 61px;
+    color: #6d6d6d;
+    height: 632px;
+}
+
+.top2 div:nth-child(1) {
+    display: inline-block;
+    margin-top: 135px;
+    width: 90%;
+}
+
+.top2 div:nth-child(2) {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+
+}
+
+.top2 div:nth-child(2) ul {
+    padding: 0px;
+    margin: 0;
+    font-size: 22px;
+}
+
+.top2 div:nth-child(2) li {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+.top2 div p {
+    margin: 0px 0px 0px 32px;
+    display: inline-block;
+}
+
+.top2 h1 {
+    font-family: Titilium-Web-Regular, "Times New Roman", sans-serif;
+    font-size: 37px;
+    margin: -4px -4px 0px 32px;
+}
+
+.top2 div:nth-child(3) {
+    position: relative;
+    width: 100%;
+    height: 176px;
+}
+
+.top2 div:nth-child(3) .cloud {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    width: 35%;
+    margin-top: 0px;
+    height: inherit;
+}
+
+.top2 div:nth-child(3) .cloud .createAccount {
+    height: 59px;
+    width: 246px;
+    background: -webkit-linear-gradient(3deg, rgba(100, 108, 146, 1) 0%, rgba(95, 47, 106, 1) 100%);
+    border-radius: 62px;
+    margin: 0;
+    font-size: 12px;
+
+}
+
+.top2 div:nth-child(3) .cloud .apple, .top2 div:nth-child(3) .cloud .play {
+    background: #7a5081;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    margin: 0;
+}
+
+.top2 div:nth-child(3) .cloud li {
+    display: inline-block;
+    padding-right: 0px;
+    margin-right: 10px;
+}
+
+.top2 div:nth-child(3) .cloud ul {
+    position: relative;
+    margin: 54px 27px 0px 0px;
+    height: 111px;
+    top: 0px;
+
+}
+
+.cloud ul li:nth-last-child(-n+2) {
+    position: relative;
+    top: -8px;
+}
+
+.createAccount span {
+    position: absolute;
+    margin: 14px 0px 0px -59px;;
+    font-family: Titilium-Web-Bold, "Times New Roman", sans-serif;
+    font-size: 18.4px;
+    color: white;
+}
+
+.apple img {
+    margin: 10px 0px 0px -10px;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+}
+
+.play i {
+    margin: 13px 0px 0px -11px;
+    position: absolute;
+    font-size: 21px;
+    color: white;
+}
+
+.cloud::after {
+    z-index: -1;
+    position: relative;
+    top: -165px;
+    right: 0;
+    content: "";
+    display: inline-block;
+    width: 533px;
+    height: 24px;
+    box-shadow: -3px 49px 25px -1px rgba(112, 151, 240, 1);
+}
+
+.midSignatures {
+    display: flex;
+    justify-content: center;
+    top: -191px;
+    left: 0px;
+}
+
+.midSignatures > div {
+    width: 24%;
+    height: 424px;
+    /*background-color: #582c7e;*/
+    position: relative;
+    font-family: Titilium-Web-Regular, "Times New Roman", sans-serif;
+
+}
+
+.midSignatures div:nth-child(2):after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 49%;
+    left: 9.0%;
+    border-left: 1px solid #b9b9b9;
+    top: 0px;
+}
+
+.midSignatures div:nth-child(3):after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 116.3%;
+    border-left: 1px solid #b9b9b9;
+    /* background-color: black; */
+    bottom: -202px;
+    left: 4.5%;
+}
+
+.midSignatures div:nth-child(3):before {
+    content: '';
+    position: absolute;
+    width: 42%;
+    height: 102.3%;
+    border-top: 1px solid #b9b9b9;
+    bottom: -142px;
+    left: 106.5%;
+}
+
+.swissPrivacy div {
+    margin: 122px 0px 0px 100px;
+    display: block;
+    width: 61%;
+}
+
+.midSignatures img {
+    float: left;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.swissPrivacy div span {
+    font-size: 31px;
+}
+
+.swissPrivacy div span + p {
+    font-size: 18px;
+    margin-top: -12px;
+    width: 107%;
+    word-spacing: 2px;
+}
+
+.swissPrivacy div + p {
+    width: 81%;
+    font-size: 14px;
+    margin: 26px 0px 21px 103px;
+}
+
+/*sss*/
+.doubleEncryption div {
+    margin: 122px 0px 0px 80px;
+    display: block;
+    width: 69%;
+}
+
+
+.doubleEncryption div span {
+    font-size: 31px;
+}
+
+.doubleEncryption div span + p {
+    font-size: 18px;
+    margin-top: -12px;
+    width: 107%;
+    word-spacing: 2px;
+}
+
+.doubleEncryption img {
+    float: left;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.doubleEncryption div + p {
+    width: 80%;
+    font-size: 14px;
+    margin: 27px 0px 0px 88px;
+}
+
+/*hhhhh*/
+.anonymousEmail div {
+    margin: 120px 0px 0px 71px;
+    display: block;
+    width: 69%;
+}
+
+
+.anonymousEmail div span {
+    font-size: 31px;
+}
+
+.anonymousEmail div span + p {
+    font-size: 18px;
+    margin-top: -12px;
+    width: 107%;
+    word-spacing: 2px;
+}
+
+.anonymousEmail img {
+    float: left;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+
+.anonymousEmail div + p {
+    width: 80%;
+    font-size: 14px;
+    margin: 29px 0px 0px 72px;
+}
+
+/*phys*/
+.physical {
+    position: relative;
+    text-align: right;
+    font-family: Titilium-Web-Regular, "Times New Roman", sans-serif;
+}
+
+.physical p {
+    font-size: 62px;
+    margin: -23px 38.9% 0px 0px;
+    color: #535353;
+}
+
+.physical p + h1 {
+    font-size: 24px;
+    margin: -1px 0px 0px 20.4%;
+    width: 40%;
+    line-height: 0.95;
+    text-align: right;
+    word-spacing: 1px;
+    color: #9d9c9c;
+}
+
+.physical span {
+    color: red;
+}
+
+.physical:after {
+    content: '';
+    position: absolute;
+    width: 53%;
+    height: 102.3%;
+    border-bottom: 1px solid #b9b9b9;
+    bottom: -58px;
+    left: 2%;
+}
+
+.physical div:nth-child(2) {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    width: 17.6%;
+    height: 43%;
+    left: 53.9%;
+    top: 120%;
+    border-radius: 54px;
+    border: 1px solid black;
+    background: #FFFFFF;
+}
+
+.physical div:nth-child(2) p {
+    margin: 14px 0px 0px 0px;
+    font-size: 16.8px;
+}
+
+.contentIcons {
+    position: relative;
+    /* width: 53%; */
+    height: 42%;
+    text-align: left;
+}
+
+
+.contentIcons li {
+    display: inline-block;
+
+}
+
+.contentIcons ul {
+    position: absolute;
+    width: 51%;
+    left: 2%;
+    top: 38%;
+}
+
+.contentIcons li:nth-child(1) {
+    margin-right: 4%;
+}
+
+.contentIcons li:nth-child(2) {
+    margin-right: 4.8%;
+}
+
+.contentIcons li:nth-child(3) {
+    margin-right: 6.5%;
+}
+
+.contentIcons li:nth-child(4) {
+    margin-right: 4%;
+}
+
+.contentIcons li:nth-child(5) {
+    margin-right: 5.7%;
+}
+
+.aNewEmail {
+    position: relative;
+    top: -21%;
+    height: 38%;
+    margin-top: 0px;
+}
+
+.aNewEmail p {
+    position: relative;
+    width: 28%;
+    left: 23.7%;
+    font-size: 24px;
+    font-family: Malaga-OT-Reg-Italic;
+    top: 27%;
+    word-spacing: 1px;
+    line-height: 1.3;
+}
+
+.aNewEmail span {
+    position: relative;
+    display: block;
+    width: 27%;
+    left: 23.7%;
+    font-size: 16px;
+    font-family: Malaga-OT-Reg-Italic;
+    top: 22%;
+}
+
+.middle {
+    position: relative;
+    z-index: -1;
+    top: -35%;
+    height: 118.7%;
+    background-image: url("../images/middle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.middle div:nth-child(1) p:nth-child(1) {
+    position: absolute;
+    font-size: 36.5px;
+    top: 13.9%;
+    left: 43.5%;
+    font-family: Titilium-Web-Regular;
+}
+
+.middle div:nth-child(1) p:nth-child(2) {
+    position: absolute;
+    font-size: 16.5px;
+    top: 23.5%;
+    left: 36.9%;
+    font-family: Titilium-Web-Bold;
+    width: 24.9%;
+    text-align: right;
+}
+
+.StoreAndGoogle {
+    position: absolute;
+    top: 37%;
+    left: 41.1%;
+}
+
+.middle .nout {
+    position: absolute;
+    z-index: -1;
+    top: -14.6%;
+    left: 52.5%;
+}
+
+.middle::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 74.6%;
+    height: 472px;
+    /*background-color: black;*/
+    top: 7.4%;
+    left: 23%;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.privacyIs {
+    position: absolute;
+    font-family: Titilium-Web-Regular;
+    top: 65.3%;
+    width: 96%;
+    left: 1.8%;
+}
+
+.upgradeAndDonate {
+    position: absolute;
+    width: 29%;
+    height: 3%;
+    top: 84%;
+    left: 37.9%;
+    font-family: Titilium-Web-Bold;
+    font-size: 18px;
+
+}
+
+
+.upgradeAndDonate div:nth-child(1) {
+    width: 243px;
+    height: 54px;
+    background-color: #454545;
+    display: inline-block;
+    margin-right: 49px;
+    border-radius: 40px;
+    background: linear-gradient(80deg, rgba(100, 108, 146, 1) 0%, rgba(95, 47, 106, 1) 100%);
+    box-shadow: 0 11px 17px 0px #8796c7;
+
+
+}
+
+.upgradeAndDonate div:nth-child(2) {
+    width: 165px;
+    height: 54px;
+    background-color: #582c7e;
+    display: inline-block;
+    border-radius: 40px;
+    background: linear-gradient(80deg, rgba(53, 187, 224, 1) 0%, rgba(94, 123, 234, 1) 100%);
+    box-shadow: 0 7px 17px 0px #35bbe0;
+}
