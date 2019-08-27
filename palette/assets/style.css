@@ -1,0 +1,201 @@
+
+.header {
+    height: 20px;
+    box-shadow: 0 5px 5px -5px #333;
+    display: flex;
+    align-content: space-between;
+}
+
+.fa-bars {
+    float: left;
+    margin-left: 20px;
+}
+
+.header div:nth-child(2) {
+    width: 50%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.header div:nth-child(1) {
+    width: 50%;
+}
+
+span {
+    margin-left: 10px;
+}
+
+.menu {
+    margin-left: 40px;
+    font-size: 17px;
+    color: #7f7f7f;
+    float: left;
+}
+
+
+.menu1, .menu2 {
+    position: relative;
+    z-index: 5;
+    border: 1px solid #bcbcbc;
+    width: 248px;
+    height: 261px;
+    margin-top: 85px;
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.menu1:after, .menu2:after {
+    content: "";
+    position: absolute;
+    bottom: 132px;
+    border-bottom: 1px solid #bcbcbc;
+    width: 248px;
+    height: 193px;
+    z-index: -3;
+}
+
+.menu1 li, .menu2 li {
+    height: 63px;
+    list-style-type: none;
+}
+
+i {
+    margin-right: 21px;
+}
+
+.figures {
+    position: relative;
+    width: 1602px;
+    height: 937px;
+    left: 291px;
+    text-align: right;
+}
+
+.figure {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: grey
+}
+
+#one {
+    left: 600px;
+    top: 85px;
+}
+
+#two {
+    left: 923px;
+    top: 85px;
+}
+
+#three {
+    left: 1249px;
+    top: 85px;
+}
+
+#four {
+    left: 600px;
+    top: 407px;
+}
+
+#five {
+    left: 923px;
+    top: 407px;
+}
+
+#six {
+    left: 1248px;
+    top: 407px;
+}
+
+#seven {
+    left: 600px;
+    top: 728px;
+    border-radius: 150px;
+}
+
+#eight {
+    left: 923px;
+    top: 728px;
+}
+
+#nine {
+    left: 1248px;
+    top: 728px;
+}
+
+.menu1 a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding-top: 18px;
+    padding-left: 41px;
+}
+
+.menu2 div {
+    position: relative;
+}
+
+.menu2 ul:nth-child(1) {
+    margin-top:32px;
+    margin-left: 35px;
+}
+
+
+.colors {
+    position: relative;
+    top: -145px;
+    left: 56px;
+    width: 77%;
+    height: 30%;
+}
+
+a:visited {
+    color: #7f7f7f;
+}
+
+a:hover {
+    color: red;
+}
+
+.color {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 60px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+.colors li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#currentColor {
+    background-color: grey;
+}
+
+#green {
+    background-color: green;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+.active {
+    border: 2px solid #ff0722;
+}
+
+ul {
+    position: relative;
+    top: -17px;
+    height: 100%;
+    width: 100%;
+    padding-left: 0;
+}
+
