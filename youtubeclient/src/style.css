@@ -1,0 +1,187 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 97%;
+}
+
+header {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+  align-items: center;
+}
+
+.searchForm {
+  position: relative;
+  box-shadow: 0 0 5px;
+  height: 60px;
+  width: 70%;
+  margin: 0px auto;
+  border: 4px white;
+  background-color: #db7d00;
+}
+
+.input {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 1%;
+  width: 85%;
+  height: 30px;
+  font-size: 18px;
+}
+
+.button {
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 88%;
+  width: 10%;
+  height: 30px;
+  font-size: 18px;
+  box-shadow: 0 0 5px;
+  background-color: #db7d00;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+.item {
+  display: inline-block;
+  position: relative;
+  background: orange;
+  height: 441px;
+  width: 331px;
+  font-size: 16px;
+  margin: 5px 27px;
+  white-space: normal;
+  text-align: center;
+  border-radius: 11px;
+}
+
+.items {
+  position: relative;
+  margin: 115px auto;
+  width: 1540px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.item img {
+  margin-top: 5px;
+}
+
+.signature {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(76, 175, 80, 0.7);
+  text-align: center;
+  top: 44px;
+
+}
+
+.signatViewCount {
+  position: relative;
+  margin-top: 6px;
+}
+
+.signatVideoDescr {
+  position: absolute;
+  width: 95%;
+  height: 100px;
+  bottom: 0px;
+  text-align: justify;
+  left: 9px;
+}
+
+.signatureAuthor {
+  position: relative;
+  margin-top: 6px;
+}
+
+.signatureDate {
+  position: relative;
+  margin-top: 6px;
+}
+
+.pages {
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  height: 25px;
+  text-align: center;
+  width: 160px;
+}
+
+.circle {
+  display: block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background: #6dc91c;
+  border-radius: 50%;
+  margin: 0px 10px;
+  color: white;
+}
+
+.fa-arrow-circle-left {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-right: 100px solid #959FB0;
+  border-bottom: 50px solid transparent;
+}
+
+.fa-arrow-circle-right {
+  position: relative;
+  cursor: pointer;
+  display: none;
+  margin-top: 4px;
+  color: #83A7C9;
+  width: 0px;
+  margin-left: 202px;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.signature p {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1550px) {
+  .items {
+    width: 1155px;
+  }
+}
+
+@media screen and (max-width: 1159px) {
+  .items {
+    width: 770px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .items {
+    width: 385px;
+  }
+}
